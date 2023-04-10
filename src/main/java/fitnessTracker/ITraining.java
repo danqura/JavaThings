@@ -1,6 +1,6 @@
 package fitnessTracker;
 
-public interface trainingInterface {
+public interface ITraining {
     long getCalories();
     String getName();
 }

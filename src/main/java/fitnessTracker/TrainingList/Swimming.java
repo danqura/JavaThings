@@ -1,14 +1,16 @@
-package fitness.TrainingList;
-import fitness.trainingInterface;
+package fitnessTracker.TrainingList;
+import fitnessTracker.ITraining;
 import java.io.Serializable;
 
-public class Swimming implements trainingInterface, Serializable {
-    private static final String name = "Swimming";
-    private static final long Kcal = 3L;
+public class Swimming implements ITraining, Serializable {
+    private static final String name = "Плавание";
+    private static final long calories = 5L;
 
     @Override
-    public long getK() {
-        return Kcal;
+    public long getCalories() {
+        return calories;
     }
-    public String getName() {return name;}
+    public String getName() {
+        return name;
+    }
 }

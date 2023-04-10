@@ -1,21 +1,13 @@
-package fitness;
+package fitnessTracker;
 
 import java.io.Serializable;
 
 public class Training implements Serializable {
-
-    private final trainingInterface training;
+    private final ITraining training;
     private long durationTraining;
-
-    public Training(trainingInterface training) {this.training = training;}
-
-    public void endTrainig(long durationTraining){this.durationTraining = durationTraining;}
-
-    public long getDurationTraining() {return durationTraining;}
-
-    public long getKcal(){return training.getK()*durationTraining;}
-
-    public long getTime(){return durationTraining;}
-
-    public trainingInterface getTraining() {return training;}
+    public Training(ITraining training) {this.training = training;}
+    public void endTraining(long durationTraining){this.durationTraining = durationTraining;}
+    public long getTrainingDuration() {return durationTraining;}
+    public long getCalories(){return training.getCalories()*durationTraining;}
+    public ITraining getTraining() {return training;}
 }

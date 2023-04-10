@@ -3,45 +3,42 @@
 
 autonumber
 
-actor User
+actor Пользователь
 participant Main
 participant Person
 Collections Training
 
-User -> Main: Start
+Пользователь -> Main: Start
 
-User -> Main: Select Person
+Пользователь -> Main: Select Person
 Main -> Person: Create/Load Person
 Main <-- Person: Person
-User -> Main: Start Training
-User -> Main: Select Training type
+Пользователь -> Main: Start Training
+Пользователь -> Main: Select Training type
 
 Main -> Training: Create Training
-Main <--Training: Training
-User-> Main: Start stopwatch
-User -> Main: Stop stopwatch
+Main <--Training: training
+Пользователь-> Main: Start stopwatch
+Пользователь -> Main: Stop stopwatch
 Main -> Main: Calculate the duration
 Main -> Training: Set duration
+Main <-- Training: durationTraining
 
 
 Main -> Person: Add Training
-User -> Main: See Training
+Пользователь -> Main: See Training
 Main ->Person: See Training
 
 Person -> Training: Get Name
-Training --> Person: Name of trainig
+Training --> Person: trainingName
 Person -> Training: Get Time
-Training --> Person: Duration of trainig
-Person -> Training: Get Kcal
-Training --> Person: Kcal of Training
-Person --> User: Table of Training
+Training --> Person: durationTraining
+Person -> Training: Get Calories
+Training --> Person: trainingCalories
+Person --> Пользователь: Table of Training
 
 
-User ->Main: Save
+Пользователь ->Main: Save
 Main ->Main: Save
-
-
-
-
 
 @enduml

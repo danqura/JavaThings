@@ -1,28 +1,9 @@
-package fitness;
+package fitnessTracker;
 
-//        РџСЂРёР»РѕР¶РµРЅРёРµ РїРѕР·РІРѕР»СЏРµС‚ СѓРєР°Р·Р°С‚СЊ РІРёРґ С‚СЂРµРЅРёСЂРѕРІРєРё: РѕС‚Р¶РёРјР°РЅРёРµ, СЃРєР°РєР°Р»РєР°, РїСЂРёСЃРµРґР°РЅРёСЏ.
-//        Р”РѕСЃС‚СѓРїРЅС‹ РєРѕРјР°РЅРґС‹: РЅР°С‡Р°С‚СЊ С‚СЂРµРЅРёСЂРѕРІРєСѓ (Р·Р°РїСѓСЃРєР°РµС‚СЃСЏ С‚Р°Р№РјРµСЂ С‚СЂРµРЅРёСЂРѕРІРєРё), Р·Р°РєРѕРЅС‡РёС‚СЊ С‚СЂРµРЅРёСЂРѕРІРєСѓ (С‚Р°Р№РјРµСЂ РѕСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ).
-//        Р—Р° РѕС‚СЂР°Р±РѕС‚Р°РЅРЅРѕРµ РІСЂРµРјСЏ РІС‹СЃС‡РёС‚С‹РІР°РµС‚СЃСЏ РєРѕР»РёС‡РµСЃС‚РІРѕ РїРѕС‚СЂР°С‡РµРЅРЅС‹С… РєР°Р»РѕСЂРёР№ РїРѕ С„РѕСЂРјСѓР»Рµ K*t=cal, РіРґРµ K - РєРѕР»РёС‡РµСЃС‚РІРѕ РєР°Р»РѕСЂРёР№ РІ С‡Р°СЃ,
-//        Р·Р°С‚СЂР°С‡РёРІР°РµРјРѕРµ РЅР° РѕРїСЂРµРґРµР»РµРЅРЅС‹Р№ РІРёРґ С‚СЂРµРЅРёСЂРѕРІРєРё, t - РІСЂРµРјСЏ, Р·Р°СЃРµС‡РµРЅРЅРѕРµ С‚СЂРµРєРµСЂРѕРј. "
-//        РћС‚ Р·Р°РїСѓСЃРєР° Рє Р·Р°РїСѓСЃРєСѓ РїСЂРѕРіСЂР°РјРјС‹ РґР°РЅРЅС‹Рµ РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ Рё РѕР±С‰РµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РєР°Р»РѕСЂРёР№ - СЃСѓРјРјРёСЂРѕРІР°С‚СЊСЃСЏ.
-//        РџРµСЂСЃРёСЃС‚РµРЅС†РёСЏ РґР°РЅРЅС‹С… РїСЂРёР»РѕР¶РµРЅРёСЏ СЃ РїРѕРјРѕС‰СЊСЋ ObjectOutputStream +5 Р±Р°Р»Р»РѕРІ РёР»Рё JAXB +10 Р±Р°Р»Р»РѕРІ
-//        РџРѕРґРґРµСЂР¶РєР° РЅРµСЃРєРѕР»СЊРєРёС… РїСЂРѕС„РёР»РµР№ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РїСЂРёР»РѕР¶РµРЅРёРµРј + 5 Р±Р°Р»Р»РѕРІ"
-
-//"Р—Р°РґР°С‡Рё СЃ РѕС†РµРЅРєРѕР№ 20+ Р±Р°Р»Р»РѕРІ РґРѕСЃС‚СѓРїРЅС‹ РґР»СЏ Р·Р°С‡С‘С‚РЅРѕР№\РєСѓСЂСЃРѕРІРѕР№ СЂР°Р±РѕС‚С‹.
-//
-//        РџРѕ РЅРёРј РЅРµРѕР±С…РѕРґРёРј РѕС‚С‡РµС‚. РўСЂРµР±РѕРІР°РЅРёСЏ Рє СЃРѕРґРµСЂР¶РёРјРѕРјСѓ РѕС‚С‡С‘С‚Р°:
-//        0. С†РµР»СЊ СЂР°Р±РѕС‚С‹, РїРѕСЃС‚Р°РЅРѕРІРєР° Р·Р°РґР°С‡ СЂР°Р±РѕС‚С‹,
-//        1. РѕРїРёСЃР°РЅРёРµ Р°СЂС…РёС‚РµРєС‚СѓСЂС‹ РїСЂРёР»РѕР¶РµРЅРёСЏ (UML class diagram, component diagram, sequence diagram),
-//        2. СЃРєСЂРёРЅС€РѕС‚С‹ РѕСЃРЅРѕРІРЅС‹С… СЌРєСЂР°РЅРѕРІ РїСЂРёР»РѕР¶РµРЅРёСЏ,
-//        3. РѕС†РµРЅРєР° РїРѕРєСЂС‹С‚РёСЏ РєРѕРґР° РјРѕРґСѓР»СЊРЅС‹РјРё С‚РµСЃС‚Р°РјРё,
-//        4. РїРµСЂРµС‡РёСЃР»РµРЅРёРµ РёСЃРїРѕР»СЊР·РѕРІР°РЅРЅС‹С… API Рё Р±РёР±Р»РёРѕС‚РµРє,
-//        5. РІС‹РІРѕРґ РїРѕ РїСЂРѕРґРµР»Р°РЅРЅРѕР№ СЂР°Р±РѕС‚Рµ."
-
-
-//Р“Р»СѓР±РѕРєРѕ СЂР°СЃРїРёСЃС‹РІР°С‚СЊ РЅРµ РЅСѓР¶РЅРѕ
+// Фитнес-трекер
 import com.google.common.base.Stopwatch;
 
-import fitness.TrainingList.*;
+import fitnessTracker.TrainingList.*;
 import java.io.*;
 import java.util.Objects;
 import java.util.Scanner;
@@ -31,93 +12,85 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
 
-    static String SAVEPATH = "src/main/java/fitness/save/";
+    static String SAVEPATH = "src/main/java/fitnessTracker/save/";
     public static void main(String[] args) throws InterruptedException {
-        //РЎРґРµР»Р°С‚СЊ РєР»Р°СЃСЃ С‚СЂРµРєРёСЂР°
 
         Scanner in = new Scanner(System.in);
-        int i = 0;
+        int menuPointer = 0;
         Person person = null;
         Training training = null;
-        Stopwatch stopwatch;
+        Stopwatch timer;
 
         while (true) {
-            while ((i != 1  && i != 2)) {
-                System.out.println("1 - To create new person\n2 - To load person from file\n0 - To close");
-                i = in.nextInt();
-                switch (i) {
+            while ((menuPointer != 1  && menuPointer != 2)) {
+                System.out.println("1 - Создать новый профиль\n2 - Загрузить профиль\n0 - Прекращение работы");
+                menuPointer = in.nextInt();
+                switch (menuPointer) {
                     case 1:
-                        System.out.println("Write profile name:");
+                        System.out.println("Введите имя профиля:");
                         String name = in.next();
-                        if (profileNameIsFree(name)) {
+                        if (checkIfNameIsFree(name)) {
                             person = new Person(name);
-                            System.out.println("Profile is " + person.getName() + " has been created");
+                            System.out.println("Профиль " + person.getName() + " был создан");
                         } else {
-                            System.out.println("That profile name's taken");
-                            i = 0;
+                            System.out.println("Имя профиля уже занято.");
+                            menuPointer = 0;
                         }
                         break;
                     case 2:
                         if (canLoad()) {
-                            System.out.println("Select profile:");
+                            System.out.println("Выберите профиль:");
                             person = load();
                         } else {
-                            System.out.println("Save file not found");
+                            System.out.println("Профили не найдены.");
+                            menuPointer = 0;
                         }
                         break;
                     case 0:
                         return;
                 }
             }
-            while (i != 9 && person != null) {
-                System.out.println("1 - To start the training\n2 - To info about training\n3 - To save\n9 - To exit\n0 - To close ");
-                i = in.nextInt();
-                switch (i) {
+            while (menuPointer != 9 && person != null) {
+                System.out.println("1 - Начать тренировку\n2 - Данные о тренировках\n3 - Сохранить\n9 - Выйти из профиля\n0 - Прекращение работы");
+                menuPointer = in.nextInt();
+                switch (menuPointer) {
                     case 0:
                         return;
-                    case 9:
-                        person = null;
-                        break;
                     case 1:
-                        System.out.println("Select the trainig");
-                        System.out.println("1 - Runing\n2 - Swimming\n3 - Situps\n4 - SkippingRope\n - Pushups");
-                        i = 0;
-                        while (i != 1 && i != 2 && i != 3 && i != 4 && i != 5)  { //РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ enum
-                            i = in.nextInt();
-                            switch (i) {
-                                case 1 -> training = new Training(new Runing());
+                        System.out.println("Выберите тренировку");
+                        System.out.println("1 - Бег\n2 - Плавание\n3 - Приседания\n4 - Скакалка\n5 - Отжимания");
+                        menuPointer = 0;
+                        while (menuPointer != 1 && menuPointer != 2 && menuPointer != 3 && menuPointer != 4 && menuPointer != 5)  { //можно использовать enum
+                            menuPointer = in.nextInt();
+                            switch (menuPointer) {
+                                case 1 -> training = new Training(new Running());
                                 case 2 -> training = new Training(new Swimming());
                                 case 3 -> training = new Training(new Situps());
-                                case 4 -> training = new Training(new SkippingRope());
+                                case 4 -> training = new Training(new Skiprope());
                                 case 5 -> training = new Training(new Pushups());
-                                default -> System.out.println("Writhe the right number");
+                                default -> System.out.println("Выберите адекватную тренировку.");
                             }
                         }
-                        System.out.println("Press Enter to start the training");
+                        System.out.println("Подтвердите начало тренировки");
                         in.next();
-                        stopwatch = Stopwatch.createStarted();
-                        System.out.println("Press Enter to end the training");
+                        timer = Stopwatch.createStarted();
+                        System.out.println("Подтвердите конец тренировки");
                         in.next();
-                        stopwatch.stop();
-                        training.endTrainig(stopwatch.elapsed(TimeUnit.SECONDS));
+                        timer.stop();
+                        training.endTraining(timer.elapsed(TimeUnit.SECONDS));
                         person.addTraining(training);
+                        //savePerson(person); -- При желании можно сохранять прямо после окончания тренировки
                         break;
                     case 2:
-                        System.out.println("Select the info");
-                        System.out.println("1 - Training info\n2 - kCal info");
-                        i = 0;
-                        while (i != 1 && i != 2){
-                            i = in.nextInt();
-                            switch (i) {
-                                case 1 -> person.seeTraining();
-                                case 2 -> System.out.println("Total kCal for all time: " + person.getKcal());
-                                default -> System.out.println("Writhe the right number");
-                            }
-                        }
+                        person.seeTraining();
+                        System.out.println("Итого калорий: " + person.getTotalCalories());
                         break;
                     case 3:
-                        save(person);
-                        System.out.println("Writhe the right number");
+                        savePerson(person);
+                        System.out.println("Выберите адекватный вариант");
+                        break;
+                    case 9:
+                        person = null;
                         break;
                 }
             }
@@ -129,12 +102,12 @@ public class Main {
         File folder = new File(SAVEPATH);
         Scanner in = new Scanner(System.in);
         int position = -1;
-        for (int i = 0; i< Objects.requireNonNull(folder.listFiles()).length; i++) //С‡С‚Рѕ СЌС‚Рѕ?
-        {
+        for (int i = 0; i< Objects.requireNonNull(folder.listFiles()).length; i++) //что это?
+         {
             System.out.println((i+1) + " - " + Objects.requireNonNull(folder.listFiles())[i].getName());
         }
         while (position<0||position>folder.listFiles().length) {
-            System.out.println("Write to number");
+            System.out.println("Выберите номер пользователя");
             position = in.nextInt();
         }
         if(position == 0){
@@ -145,20 +118,21 @@ public class Main {
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
-        System.out.println("Profile "+p.getName()+" uploaded");
+        System.out.println("Профиль "+p.getName()+" загружен.");
         return p;
     }
 
-    static void save(Person person) {
+    static void savePerson(Person person) {
         try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(SAVEPATH+person.getName()))){
             oos.writeObject(person);
+            System.out.println("Профиль "+person.getName()+" сохранен.");
         }
         catch(Exception ex){
             System.out.println(ex.getMessage());
         }
     }
 
-    static boolean profileNameIsFree(String name){
+    static boolean checkIfNameIsFree(String name){
         File folder = new File(SAVEPATH);
         for (int i = 0; i< Objects.requireNonNull(folder.listFiles()).length; i++){
             if(Objects.requireNonNull(folder.listFiles())[i].getName().equals(name)){

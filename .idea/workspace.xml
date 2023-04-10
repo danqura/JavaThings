@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4fff1e8-2481-41c3-b26a-52671710388e" name="Changes" comment="" />
+    <list default="true" id="f4fff1e8-2481-41c3-b26a-52671710388e" name="Changes" comment="updated code">
+      <change afterPath="$PROJECT_DIR$/src/main/java/doubles/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/doubles/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/Diagram/classDiagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/Diagram/classDiagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/Diagram/componentDiagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/Diagram/componentDiagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/Diagram/sequenceDiagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/Diagram/sequenceDiagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/ITraining.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/ITraining.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/Save/ASD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/Training.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/Training.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/TrainingList/Pushups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/TrainingList/Pushups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/TrainingList/Running.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/TrainingList/Running.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/TrainingList/Situps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/TrainingList/Situps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/TrainingList/Skiprope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/TrainingList/Skiprope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fitnessTracker/TrainingList/Swimming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fitnessTracker/TrainingList/Swimming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fitnessTracker/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fitnessTracker/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fitnessTracker/TrainingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fitnessTracker/TrainingTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="UML Component" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2OEENfRmom0ik8ni2Tu48Ngks8c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -18,11 +61,134 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Component",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "G:/H-QSDT-master",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dancura\IdeaProjects\TRKPO\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dancura\IdeaProjects\TRKPO\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.doubles in TRKPO">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="doubles.Main" />
+      <module name="TRKPO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="doubles.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fitnessTracker.Main" />
+      <module name="TRKPO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TRKPO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fitnessTracker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fitnessTracker" />
+      <option name="MAIN_CLASS_NAME" value="fitnessTracker.TrainingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainingTest.RunningTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TRKPO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fitnessTracker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fitnessTracker" />
+      <option name="MAIN_CLASS_NAME" value="fitnessTracker.TrainingTest" />
+      <option name="METHOD_NAME" value="RunningTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="TRKPO" />
+      <option name="PACKAGE_NAME" value="fitnessTracker" />
+      <option name="MAIN_CLASS_NAME" value="fitnessTracker.PersonTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="doubles in TRKPO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TRKPO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="doubles.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="doubles" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fitnessTracker in TRKPO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TRKPO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fitnessTracker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fitnessTracker" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="JUnit.TrainingTest" />
+      <item itemvalue="JUnit.TrainingTest.RunningTest" />
+      <item itemvalue="JUnit.doubles in TRKPO" />
+      <item itemvalue="JUnit.fitnessTracker in TRKPO" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.doubles in TRKPO" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.fitnessTracker in TRKPO" />
+        <item itemvalue="JUnit.TrainingTest" />
+        <item itemvalue="JUnit.TrainingTest.RunningTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,12 +197,66 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681117304295</updated>
+      <workItem from="1681117305921" duration="22244000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="4dda4f33-1d2c-4ea1-9311-282dcff11fee">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="5aa5ecf9-84d6-4889-a343-b2ddf5d2870d">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Dancura/IdeaProjects/TRKPO/src/main/java/fitnessTracker" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -44,5 +264,30 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="4dda4f33-1d2c-4ea1-9311-282dcff11fee" value="TOOL_WINDOW" />
+        <entry key="5aa5ecf9-84d6-4889-a343-b2ddf5d2870d" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated code" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated code" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TRKPO$TrainingTest_RunningTest.ic" NAME="TrainingTest.RunningTest Coverage Results" MODIFIED="1681122073601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>fitnessTracker.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TRKPO$doubles_in_TRKPO.ic" NAME="doubles in TRKPO Coverage Results" MODIFIED="1681138014066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>doubles.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TRKPO$Unnamed.ic" NAME="Unnamed Coverage Results" MODIFIED="1681121197117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TRKPO$TrainingTest.ic" NAME="TrainingTest Coverage Results" MODIFIED="1681122734278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>fitnessTracker.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TRKPO$fitnessTracker_in_TRKPO.ic" NAME="fitnessTracker in TRKPO Coverage Results" MODIFIED="1681134536021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>fitnessTracker.*</FILTER>
+    </SUITE>
   </component>
 </project>

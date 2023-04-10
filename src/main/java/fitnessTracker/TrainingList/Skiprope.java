@@ -1,14 +1,16 @@
 package fitnessTracker.TrainingList;
-import fitnessTracker.trainingInterface;
+import fitnessTracker.ITraining;
 import java.io.Serializable;
 
-public class SkippingRope implements trainingInterface, Serializable {
-    private static final String name = "SkippingRope";
-    private static final long Kcal = 1L;
+public class Skiprope implements ITraining, Serializable {
+    private static final String name = "Скакалка";
+    private static final long calories = 4L;
 
     @Override
-    public long getK() {
-        return Kcal;
+    public long getCalories() {
+        return calories;
     }
-    public String getName() {return name;}
+    public String getName() {
+        return name;
+    }
 }

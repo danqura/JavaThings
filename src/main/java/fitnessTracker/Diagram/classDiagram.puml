@@ -1,9 +1,12 @@
 @startuml
 
 Person *-- Training
-trainingInterface <|-- Swimming
-trainingInterface <|-- Runing
-Training *-- trainingInterface
+ITraining <|-- Pushups
+ITraining <|-- Running
+ITraining <|-- Situps
+ITraining <|-- Skiprope
+ITraining <|-- Swimming
+Training *-- ITraining
 
 class Person {
     -name : String;
@@ -14,38 +17,56 @@ class Person {
     +addTraining(training : Training) : void
     +seeTraining() : void
     +getName() : String
-    +getKcal() : long
+    +getTrainingList() : ArrayList<Training>
+    +getTotalCalories() : long
 }
 
 class Training{
-    -training : trainingInterface;
+    -training : ITraining;
     -durationTraining : long;
 
     +Training(training : trainingInterface)
 
-    +endTrainig(durationTraining : long) : void
+    +endTraining(durationTraining : long) : void
     +getDurationTraining() : long
-    +getKcal() : long
-    +getTime() : long
-    +getTraining() : trainingInterface
+    +getCalories() : long
+    +getTraining() : ITraining
 }
 
-interface trainingInterface{
-    +getK() : long
+interface ITraining{
+    +getCalories() : long
     +getName() : String
 }
 
+class Pushups{
+    name : String = "Плавание"
+    calories : long =  1
+    +getCalories() : long
+    +getName() : String
+}
+
+class Running{
+    name :String = "Бег"
+    calories : long =  2
+    +getCalories() : long
+    +getName() : String
+}
+class Situps{
+    name :String = "Приседания"
+    calories : long =  3
+    +getCalories() : long
+    +getName() : String
+}
+class Skiprope{
+    name :String = "Скакалка"
+    calories : long =  4
+    +getCalories() : long
+    +getName() : String
+}
 class Swimming{
-    name : String = "Swimming"
-    Kcal : long =  1.5
-    +getK() : long
-    +getName() : String
-}
-
-class Runing{
-    name :String = "Runing"
-    Kcal : long =  1.2
-    +getK() : long
+    name :String = "Плавание"
+    calories : long =  5
+    +getCalories() : long
     +getName() : String
 }
 @enduml

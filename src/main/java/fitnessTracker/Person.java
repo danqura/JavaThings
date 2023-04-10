@@ -1,4 +1,4 @@
-package fitness;
+package fitnessTracker;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -14,21 +14,21 @@ public class Person implements Serializable {
     public void addTraining(Training training){this.trainingList.add(training);}
 
     public void seeTraining(){
-        System.out.printf("%-20s%-10s%-10s%n", "Training name" , "Duration" , "kCal");
+        System.out.printf("%-20s%-15s%-15s%n", "Вид тренировки" , "Длительность" , "Калорий сожжено");
         for (Training training:this.trainingList) {
-            System.out.printf("%-20s%-10s%-10s%n",training.getTraining().getName(),training.getTime(),training.getKcal());
+            System.out.printf("%-20s%-15s%-15s%n",training.getTraining().getName(),training.getTrainingDuration(),training.getCalories());
         }
     }
 
     public ArrayList<Training> getTrainingList(){return this.trainingList;}
 
-    public long getKcal(){
-        long kcalSum = 0;
+    public long getTotalCalories(){
+        long calSum = 0;
 
         for (Training training:this.trainingList) {
-            kcalSum += training.getTraining().getK()*training.getDurationTraining();
+            calSum += training.getTraining().getCalories()*training.getTrainingDuration();
         }
-        return kcalSum;
+        return calSum;
     }
 
     public String getName() {return name;}
