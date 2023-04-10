@@ -1,0 +1,47 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor User
+participant Main
+participant Person
+Collections Training
+
+User -> Main: Start
+
+User -> Main: Select Person
+Main -> Person: Create/Load Person
+Main <-- Person: Person
+User -> Main: Start Training
+User -> Main: Select Training type
+
+Main -> Training: Create Training
+Main <--Training: Training
+User-> Main: Start stopwatch
+User -> Main: Stop stopwatch
+Main -> Main: Calculate the duration
+Main -> Training: Set duration
+
+
+Main -> Person: Add Training
+User -> Main: See Training
+Main ->Person: See Training
+
+Person -> Training: Get Name
+Training --> Person: Name of trainig
+Person -> Training: Get Time
+Training --> Person: Duration of trainig
+Person -> Training: Get Kcal
+Training --> Person: Kcal of Training
+Person --> User: Table of Training
+
+
+User ->Main: Save
+Main ->Main: Save
+
+
+
+
+
+@enduml

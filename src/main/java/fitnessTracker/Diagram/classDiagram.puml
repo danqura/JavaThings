@@ -1,0 +1,51 @@
+@startuml
+
+Person *-- Training
+trainingInterface <|-- Swimming
+trainingInterface <|-- Runing
+Training *-- trainingInterface
+
+class Person {
+    -name : String;
+    -trainingList : ArrayList<Training>;
+
+    +Person(name : String)
+
+    +addTraining(training : Training) : void
+    +seeTraining() : void
+    +getName() : String
+    +getKcal() : long
+}
+
+class Training{
+    -training : trainingInterface;
+    -durationTraining : long;
+
+    +Training(training : trainingInterface)
+
+    +endTrainig(durationTraining : long) : void
+    +getDurationTraining() : long
+    +getKcal() : long
+    +getTime() : long
+    +getTraining() : trainingInterface
+}
+
+interface trainingInterface{
+    +getK() : long
+    +getName() : String
+}
+
+class Swimming{
+    name : String = "Swimming"
+    Kcal : long =  1.5
+    +getK() : long
+    +getName() : String
+}
+
+class Runing{
+    name :String = "Runing"
+    Kcal : long =  1.2
+    +getK() : long
+    +getName() : String
+}
+@enduml
